@@ -4,19 +4,20 @@ import router  from './router/auth.js';
 import Razorpay from 'razorpay'
 import PaymentRouter from './router/Paymentroute.js';
 import BodyParser from 'body-parser';
+import cors from 'cors';
 
 
 // 👇️ "/home/john/Desktop/javascript"
 
 
 const app = express();
-
 const PORT = process.env.PORT || 5000;
 
 app.use(router);
 app.use(BodyParser.json());
 app.use(express.json());
 app.use('/api',PaymentRouter)
+app.use(cors());
 
 
 
