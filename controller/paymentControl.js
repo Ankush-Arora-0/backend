@@ -1,4 +1,4 @@
-import { instance } from "../../app.js";
+import { instance } from "../app.js";
 import crypto from 'crypto';
 import OrderMod from "../model/order.js";
 
