@@ -17,7 +17,7 @@ app.use(router);
 app.use(BodyParser.json());
 app.use(express.json());
 app.use('/api',PaymentRouter)
-app.use(express.static(path.join(__dirname,"../client/build")))
+
 
 
 export const instance = new Razorpay({
