@@ -18,6 +18,11 @@ app.use(BodyParser.json());
 app.use(express.json());
 app.use('/api',PaymentRouter)
 app.use(cors());
+app.use(function(req,res,next){
+    res.header("Access-Control-Allow-Origin","https://ecommerce-8woe.onrender.com");
+     res.header("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type,Accept");
+    next();
+});
 
 
 
