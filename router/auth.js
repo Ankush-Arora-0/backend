@@ -11,7 +11,10 @@ import OrderMod from '../model/order.js';
 const router = express.Router();
 router.use(BodyParser.json())
 router.use(cookieParser());
-router.use(cors());
+router.use(cors({
+    origin:['https://ecommerce-8woe.onrender.com'],
+    credentials:"include"
+}));
 
 
 
