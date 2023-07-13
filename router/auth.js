@@ -11,10 +11,7 @@ import OrderMod from '../model/order.js';
 const router = express.Router();
 router.use(BodyParser.json())
 router.use(cookieParser());
-router.use(cors({
-    origin: ['http://localhost:3000','https://ecommerce-app.onrender.com/' ],// Replace with your frontend domain
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-  }));
+router.use(cors());
 
 
 
