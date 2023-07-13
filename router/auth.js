@@ -94,7 +94,7 @@ router.get('/home',async(req,res)=>{
         const authdata = req.rootUser;
         const data=await Admin.find({});
         
-        res.header({'Access-Control-Allow-Origin',"*"});
+        res.header('Access-Control-Allow-Origin',"*");
         res.status(201).send(data);
     }
     catch(err){
