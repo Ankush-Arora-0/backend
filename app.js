@@ -1,8 +1,8 @@
 import express from 'express';
-import './server/db/conn.js';
-import router  from './server/router/auth.js';
+import './db/conn.js';
+import router  from './router/auth.js';
 import Razorpay from 'razorpay'
-import PaymentRouter from './server/router/Paymentroute.js';
+import PaymentRouter from './router/Paymentroute.js';
 import BodyParser from 'body-parser';
 import path from 'path';
 import {fileURLToPath} from 'url';
